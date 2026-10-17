@@ -45,7 +45,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .hero-inner { position: relative; z-index: 1; min-height: inherit; display: flex; flex-direction: column; justify-content: space-between; padding: 190px var(--pad) 64px; }
 .hero-top { max-width: none; }
 .hero-title { margin: 30px 0 26px; font: 700 clamp(44px, 6.3vw, 100px)/.92 var(--display-font); text-transform: uppercase; letter-spacing: -.01em; text-shadow: 0 0 2px rgba(0, 18, 38, .9), 0 0 14px rgba(0, 18, 38, .55), 0 2px 32px rgba(0, 10, 30, .5); }
-.hero-sub { max-width: 520px; font: 500 clamp(20px, 1.9vw, 28px)/1.2 var(--text-font); text-shadow: 0 1px 16px rgba(0, 10, 30, .6); }
+.hero-sub { white-space: nowrap; font: 500 clamp(20px, 1.9vw, 28px)/1.2 var(--text-font); text-shadow: 0 1px 16px rgba(0, 10, 30, .6); }
 .hero-btn { margin-top: 36px; }
 .hero-bottom { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
 
@@ -164,7 +164,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .hero-lobster { position: relative; left: auto; right: auto; top: auto; width: 116vw; margin: 44px 0 -36vw -8vw; transform: rotate(-10deg); }
   .hero-inner { min-height: 0; padding: 0 var(--pad) 32px; }
   .hero-title { margin: 18px 0 14px; font-size: clamp(36px, 10.6vw, 56px); }
-  .hero-sub { font-size: 18px; }
+  .hero-sub { font-size: clamp(12px, 4.05vw, 19px); }
   .hero-btn { width: 100%; height: 56px; margin-top: 24px; font-size: 20px; }
   .hero-bottom { margin-top: 28px; gap: 10px; }
   .chip-img { height: 32px; }
