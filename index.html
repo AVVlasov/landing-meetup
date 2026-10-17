@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Выращиваем лобстера, митап 11 ноября, Технохаб Сбера</title>
+<meta name="description" content="Митап про AI-агентов и вайбкодинг. 11 ноября 2026, 18:00, Санкт-Петербург, Технохаб Сбера.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="header" data-cms="Шапка">
+  <a class="header-logo" href="#home" aria-label="Сбер 185, в начало"><img src="assets/img/sber-185.svg" alt="Сбер 185" width="133" height="56"></a>
+  <nav class="header-nav" id="nav" aria-label="Разделы">
+    <a href="#about">О митапе</a>
+    <a href="#speakers">Спикеры</a>
+    <a href="#program">Программа</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <button class="header-burger" aria-label="Меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+</header>
+
+<main>
+
+<section class="hero" id="home" data-cms="Первый экран: фон KV, Lottie, текст">
+  <picture class="hero-bg" aria-hidden="true">
+    <source media="(max-width: 760px)" srcset="assets/img/hero-mobile.webp">
+    <img src="assets/img/hero-desktop.webp" alt="" width="1920" height="1080" fetchpriority="high">
+  </picture>
+  <div class="hero-lobster" id="lobster" aria-hidden="true" data-cms="Lottie: assets/lottie/lobster-kv.json"></div>
+  <div class="hero-inner">
+    <div class="hero-top">
+      <p class="chips"><span class="chip chip-hash">#</span><span class="chip">каквсбере</span></p>
+      <h1 class="hero-title">Выращиваем лобстера</h1>
+      <p class="hero-sub">Митап про AI-агентов и&nbsp;вайбкодинг</p>
+      <a class="btn btn-gradient hero-btn" href="" data-cms="Ссылка на регистрацию">Зарегистрироваться</a>
+    </div>
+    <div class="hero-bottom">
+      <p class="chips"><span class="chip chip-fill">11</span><span class="chip">ноября</span><span class="chip">2026</span><span class="chip">18:00</span></p>
+      <p class="chips"><span class="chip chip-dot">Санкт-Петербург, Технохаб Сбера</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="section about" id="about" data-cms="О митапе">
+  <h2 class="section-title">О митапе</h2>
+  <div class="about-text">
+    <p>Сгенерировать код, текст или прототип сейчас может каждый. Ценится тот, кто отличает работающее от&nbsp;нейрослопа.</p>
+    <p>На митапе разберём, где AI уже приносит пользу, где только создаёт видимость работы и какие сегодняшние решения обернутся проблемами в&nbsp;2027&nbsp;году.</p>
+    <p>Встречаемся офлайн в&nbsp;Технохабе Сбера, в&nbsp;зале 150 мест. Двери открываются в&nbsp;17:30, после программы остаёмся общаться до&nbsp;21:30.</p>
+  </div>
+</section>
+
+<section class="section speakers" id="speakers" data-cms="Спикеры: карусель">
+  <h2 class="section-title">Спикеры</h2>
+  <div class="carousel">
+    <button class="carousel-arrow prev" aria-label="Предыдущие спикеры"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6l-6 6 6 6"/></svg></button>
+    <div class="carousel-track" id="track">
+      <article class="speaker-card">
+        <img src="assets/img/speaker-perevalov.webp" alt="Станислав Перевалов" width="610" height="762" loading="lazy">
+        <h3>Станислав Перевалов</h3>
+        <p>Агентное предпринимательство</p>
+      </article>
+      <article class="speaker-card">
+        <img src="assets/img/speaker-tazeev.webp" alt="" width="610" height="762" loading="lazy">
+        <h3>Динар Тазеев</h3>
+        <p>Агентное предпринимательство</p>
+      </article>
+      <article class="speaker-card">
+        <img src="assets/img/speaker-novotarsky.webp" alt="Михаил Новотарский" width="610" height="762" loading="lazy">
+        <h3>Михаил Новотарский</h3>
+        <p>Ошибки будущего</p>
+      </article>
+      <article class="speaker-card">
+        <img src="assets/img/speaker-vlasov.webp" alt="Андрей Власов" width="610" height="762" loading="lazy">
+        <h3>Андрей Власов</h3>
+        <p>Ошибки будущего</p>
+      </article>
+    </div>
+    <button class="carousel-arrow next" aria-label="Следующие спикеры"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 6l6 6-6 6"/></svg></button>
+  </div>
+  <div class="carousel-dots" id="dots" aria-hidden="true"></div>
+</section>
+
+<section class="section program" id="program" data-cms="Программа: вкладки">
+  <h2 class="section-title">Программа</h2>
+  <div class="tabs" role="tablist" aria-label="Залы">
+    <button class="tab" role="tab" id="tab-big" aria-selected="true" aria-controls="panel-big">Большой зал</button>
+    <button class="tab" role="tab" id="tab-small" aria-selected="false" aria-controls="panel-small" tabindex="-1">Малый зал</button>
+  </div>
+
+  <div class="schedule" id="panel-big" role="tabpanel" aria-labelledby="tab-big">
+    <div class="row-short"><span class="time">17:30–18:00</span><h3>Сбор гостей и&nbsp;кофе</h3></div>
+    <div class="row-short"><span class="time">18:00–18:05</span><h3>Открытие</h3></div>
+    <article class="row-talk">
+      <span class="time">18:05–18:50</span>
+      <div class="talk-people">
+        <div class="person"><img src="assets/img/speaker-perevalov-circle.webp" alt="" width="120" height="120" loading="lazy"><h4>Станислав Перевалов</h4></div>
+        <div class="person"><img src="assets/img/speaker-tazeev-circle.webp" alt="" width="120" height="120" loading="lazy"><h4>Динар Тазеев</h4></div>
+      </div>
+      <div class="talk-text">
+        <h3>Агентное предпринимательство</h3>
+        <p>Спикеры полгода помогали малому бизнесу внедрять AI-агентов. Расскажут истории предпринимателей: где хватило обычной автоматизации, где понадобился агент и&nbsp;как не&nbsp;переплатить за&nbsp;токены. Инженер, который думает о&nbsp;своём деле, увидит, с&nbsp;каких задач начинать.</p>
+        <p>В&nbsp;конце пять минут на&nbsp;вопросы.</p>
+      </div>
+    </article>
+    <article class="row-talk">
+      <span class="time">18:50–19:30</span>
+      <div class="talk-people">
+        <div class="person"><img src="assets/img/speaker-novotarsky-circle.webp" alt="" width="120" height="120" loading="lazy"><h4>Михаил Новотарский</h4></div>
+        <div class="person"><img src="assets/img/speaker-vlasov-circle.webp" alt="" width="120" height="120" loading="lazy"><h4>Андрей Власов</h4></div>
+      </div>
+      <div class="talk-text">
+        <h3>Ошибки будущего</h3>
+        <p>Два спикера, две роли. Первый говорит от&nbsp;лица сегодняшнего дня, второй от&nbsp;лица 2027 года. Вместе они ищут в&nbsp;нынешней работе с&nbsp;AI ошибки, которые индустрия уже совершала, и&nbsp;разбираются, чем они обернутся через год.</p>
+      </div>
+    </article>
+    <div class="row-short"><span class="time">19:30–19:45</span><h3>Перерыв</h3></div>
+    <article class="row-talk">
+      <span class="time">19:45–20:45</span>
+      <div class="talk-people talk-people-text"><h4>Эксперт по&nbsp;агентной разработке и&nbsp;двое участников из&nbsp;зала</h4></div>
+      <div class="talk-text">
+        <h3>Прожарка участников из&nbsp;зала</h3>
+        <p>Двое участников выходят на&nbsp;сцену к&nbsp;эксперту по&nbsp;агентной разработке. Они рассказывают, какой нейросетью пользуются, из&nbsp;каких инструментов собрали своё рабочее место и&nbsp;сколько за&nbsp;это платят. Прожарщики спорят с&nbsp;ними и&nbsp;с&nbsp;залом.</p>
+        <p>Зал голосует, чья нейросеть лучше, и&nbsp;каждый заодно проверит, на&nbsp;каком уровне сам работает с&nbsp;AI.</p>
+      </div>
+    </article>
+    <div class="row-short"><span class="time">20:45–20:55</span><h3>Общий финал</h3></div>
+    <div class="row-short"><span class="time">20:55–21:30</span><h3>Общение</h3></div>
+  </div>
+
+  <div class="schedule" id="panel-small" role="tabpanel" aria-labelledby="tab-small" hidden>
+    <article class="row-talk">
+      <span class="time">19:45–20:45</span>
+      <div class="talk-people talk-people-text"><h4>Гостья круга и&nbsp;участницы</h4></div>
+      <div class="talk-text">
+        <h3>Женский круг</h3>
+        <p>Как жить в&nbsp;мире мужчин и&nbsp;AI-агентов? Разговор о&nbsp;работе и&nbsp;своём опыте с&nbsp;агентами. Гостья расскажет, как работает с&nbsp;ними каждый день, а&nbsp;участницы поделятся своим.</p>
+        <p>Круг идёт одновременно с&nbsp;прожаркой в&nbsp;большом зале.</p>
+      </div>
+    </article>
+    <div class="row-short"><span class="time">20:45–20:55</span><h3>Общий финал в&nbsp;большом зале</h3></div>
+  </div>
+</section>
+
+<section class="section cta" data-cms="Кнопка регистрации">
+  <a class="btn btn-gradient btn-wide" href="" data-cms="Ссылка на регистрацию">Зарегистрироваться</a>
+</section>
+
+<section class="section video" id="video" data-cms="Видео: VK Video">
+  <h2 class="section-title">Тизеры докладов</h2>
+  <div class="video-slot" data-vk-src="" data-cms="Ссылка на ролик в VK Video">
+    <img src="assets/img/video-poster.webp" alt="" width="1440" height="810" loading="lazy">
+    <button class="video-play" aria-label="Смотреть тизеры"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></button>
+  </div>
+</section>
+
+<section class="section faq" id="faq" data-cms="FAQ">
+  <h2 class="section-title">FAQ</h2>
+  <details><summary>Где пройдёт митап?</summary><p>В&nbsp;Технохабе Сбера: Санкт-Петербург, ул.&nbsp;Уральская,&nbsp;1 (лит.&nbsp;Ч и&nbsp;В3).</p></details>
+  <details><summary>Когда приходить?</summary><p>Двери открываются в&nbsp;17:30, начинаем ровно в&nbsp;18:00.</p></details>
+  <details><summary>Нужна ли регистрация?</summary><p>Да. Митап проходит офлайн, в&nbsp;зале 150 мест.</p></details>
+  <details><summary>Можно ли задать вопрос спикерам?</summary><p>Да. После первого доклада пять минут на&nbsp;вопросы, а&nbsp;на&nbsp;прожарке зал спорит и&nbsp;голосует.</p></details>
+  <details><summary>Что проходит в&nbsp;малом зале?</summary><p>Женский круг с&nbsp;19:45 до&nbsp;20:45, одновременно с&nbsp;прожаркой. На&nbsp;общий финал все собираются в&nbsp;большом зале.</p></details>
+  <details><summary>Будет ли время пообщаться?</summary><p>Да, после финала остаёмся до&nbsp;21:30.</p></details>
+</section>
+
+</main>
+
+<footer class="footer" data-cms="Подвал из шаблона, без изменений">
+  <a class="footer-logo" href="https://www.sberbank.ru/" aria-label="Сбер"><img src="https://sber.ru/images/2427/1765868857152.svg" alt="Сбер" width="130" height="36"></a>
+  <p>Генеральная лицензия на&nbsp;осуществление банковских операций от&nbsp;11&nbsp;августа 2015 года. Регистрационный номер&nbsp;1481</p>
+  <p>© 1997–2026 ПАО Сбербанк. Россия, Москва, 117997, ул.&nbsp;Вавилова,&nbsp;19</p>
+  <div class="footer-links"><a href="https://www.sberbank.ru/privacy/policy">Политика обработки персональных данных</a><a href="https://www.sberbank.ru/">sberbank.ru</a></div>
+</footer>
+
+<script src="assets/vendor/lottie.min.js"></script>
+<script src="assets/lottie/lobster-kv.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
