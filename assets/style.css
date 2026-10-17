@@ -41,12 +41,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .hero { position: relative; min-height: max(760px, min(100svh, 980px)); overflow: hidden; isolation: isolate; }
 .hero-bg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; z-index: -2; }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(0, 8, 24, .5) 0, rgba(0, 8, 24, 0) 190px), linear-gradient(90deg, rgba(0, 6, 22, .45) 0%, rgba(0, 6, 22, 0) 55%), linear-gradient(0deg, rgba(0, 0, 0, .45) 0%, rgba(0, 0, 0, 0) 22%); }
-.hero-lobster { position: absolute; z-index: 0; left: 57%; top: 52%; width: min(60vw, 900px, 92svh); aspect-ratio: 1; transform: translate(-50%, -50%) rotate(-12deg); pointer-events: none; }
+/* Лобстер привязан к кнопке: кончик клешни в пике жеста (65, 250 из 1200×700) стоит у правого края кнопки */
+.hero-cta { position: relative; display: inline-block; margin-top: 36px; }
+.hero-lobster { --lw: clamp(640px, 64vw, 1000px); position: absolute; z-index: -1; width: var(--lw); aspect-ratio: 12 / 7;
+  left: calc(100% + 26px - var(--lw) * 0.0542); top: calc(50% - var(--lw) * 0.2083); pointer-events: none; }
 .hero-inner { position: relative; z-index: 1; min-height: inherit; display: flex; flex-direction: column; justify-content: space-between; padding: 190px var(--pad) 64px; }
 .hero-top { max-width: none; }
 .hero-title { margin: 30px 0 26px; font: 700 clamp(44px, 6.3vw, 100px)/.92 var(--display-font); text-transform: uppercase; letter-spacing: -.01em; text-shadow: 0 0 2px rgba(0, 18, 38, .9), 0 0 14px rgba(0, 18, 38, .55), 0 2px 32px rgba(0, 10, 30, .5); }
 .hero-sub { white-space: nowrap; font: 500 clamp(20px, 1.9vw, 28px)/1.2 var(--text-font); text-shadow: 0 1px 16px rgba(0, 10, 30, .6); }
-.hero-btn { margin-top: 36px; }
+
 .hero-bottom { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
 
 .chip-img { display: block; width: auto; height: 44px; }
@@ -71,7 +74,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .carousel-track { display: flex; gap: 86px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 0 58px 4px; scroll-padding-left: 58px; }
 .carousel-track::-webkit-scrollbar { display: none; }
 .speaker-card { flex: 0 0 336px; scroll-snap-align: start; padding: 14px 14px 22px; border: 1px solid var(--card-line); border-radius: 12px; }
-.speaker-card img { width: 100%; height: auto; aspect-ratio: 305 / 232; object-fit: cover; object-position: 50% 8%; border-radius: 4px; background: #02aed2; }
+.speaker-card img { width: 100%; height: auto; aspect-ratio: 305 / 232; object-fit: cover; object-position: 50% 50%; border-radius: 4px; background: #02aed2; }
 .speaker-card h3 { margin-top: 26px; font: 600 22px/1.25 var(--text-font); }
 .speaker-card p { margin-top: 12px; font: 300 16px/1.25 var(--display-font); color: var(--muted); }
 .carousel-arrow { position: absolute; top: 50%; z-index: 2; width: 50px; height: 50px; border: 0; border-radius: 50%; background: #e3e5eb; transform: translateY(-50%); display: grid; place-items: center; }
@@ -161,11 +164,12 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .hero-bg img { object-position: 50% 0; }
   .hero-bg img { height: 100%; }
   .hero::after { background: linear-gradient(180deg, rgba(0, 8, 24, .45) 0, rgba(0, 8, 24, 0) 120px), linear-gradient(0deg, rgba(0, 8, 24, .82) 0%, rgba(0, 8, 24, .62) 46%, rgba(0, 8, 24, 0) 66%); }
-  .hero-lobster { position: relative; left: auto; right: auto; top: auto; width: 116vw; margin: 44px 0 -36vw -8vw; transform: rotate(-10deg); }
-  .hero-inner { min-height: 0; padding: 0 var(--pad) 32px; }
+  .hero-cta { display: block; margin-top: 24px; }
+  .hero-lobster { position: relative; left: auto; top: auto; width: 118%; margin: -40px 0 -14px -4%; }
+  .hero-inner { min-height: 0; padding: 104px var(--pad) 32px; }
   .hero-title { margin: 18px 0 14px; font-size: clamp(36px, 10.6vw, 56px); }
   .hero-sub { font-size: clamp(12px, 4.05vw, 19px); }
-  .hero-btn { width: 100%; height: 56px; margin-top: 24px; font-size: 20px; }
+  .hero-btn { width: 100%; height: 56px; font-size: 20px; }
   .hero-bottom { margin-top: 28px; gap: 10px; }
   .chip-img { height: 32px; }
 
